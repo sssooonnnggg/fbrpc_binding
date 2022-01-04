@@ -1,0 +1,23 @@
+{
+  "name": "fbrpc_binding",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "cmake-js-avatar clean",
+    "build": "cmake-js-avatar build --CDCMAKE_GENERATOR_TOOLSET=ClangCL -G \"Visual Studio 16 2019\" --CDCMAKE_TOOLCHAIN_FILE=../../vcpkg/scripts/buildsystems/vcpkg.cmake --CDVCPKG_TARGET_TRIPLET=x64-windows-static-md",
+    "test": "node index.js",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "cmake-js-avatar": "^0.0.6",
+    "flatbuffers": "^2.0.4",
+    "node-addon-api": "^4.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  },
+  "cmake-js": {
+    "runtime": "electron",
+    "runtimeVersion": "15.0.0-nightly.20210527",
+    "arch": "x64"
+  }
+}

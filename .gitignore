@@ -1,0 +1,9 @@
+.vs
+node_modules
+lib
+build
+*.js
+*.js.map
+yarn.lock
+package-lock.json
+src/generated
